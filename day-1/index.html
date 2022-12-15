@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Urban Lifes -Your service company</title>
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     
@@ -14,12 +17,13 @@
 
 <section id="header" >
 <nav>
-<a href=""><img  src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png" alt=""> </a>
+<a target="_blank" href=".\day-3\logoattach.html"><img  target="_blank" src=".\images\UL.png" alt=""> </a>
 <div id="nav-links">
 <ul>
  <li><a href="./day-2/Blog.html">Blog</a></li>
- <li><a href="">Registered As A Professional</a></li>
- <li><a id="login" href="">Login/Sign Up</a></li>
+ <li><a href="./regitration.html">Registered As A Professional</a></li>
+ <li><a href="">Help Center </a></li>
+ <li onclick="shownumber()" ><a  id="login" href="">Login/Sign Up</a></li>
 </ul>
 
 
@@ -42,9 +46,13 @@
 </section>
 
 <div id="login-container">
+
   <div>
   <div id="click">
   <span>
+    <!-- <i class='fas fa-window-close' style='font-size:36px'></i> -->
+    <i onclick="hidenumber()" class="fa fa-remove" aria-hidden="true"></i>
+    
   </span>
   <p>Please login to Continue</p>
   </div>
@@ -53,18 +61,25 @@
   
     <div class="number">
   
-  
       <span>
     <img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt="">
     <span>+1</span>
       </span>
-  
+      <span id="icon-div">
+        <!-- <i class="fa" aria-hidden="true"></i> -->
+        <i class="fa fa-chevron-circle-down"  style="font-size: 20px; align-self: center; padding-top: 5px; " aria-hidden="true"></i>
+    </span>
+    <input placeholder="Type Your Number" id="type-number"type="text">
   
   
     </div>
   
      </div>
   
+<div id="continue-btn"><button >Continue</button></div>
+
+
+
   </div>
   </div>
 
@@ -95,21 +110,37 @@
 <div id="lower">
     <p>Where do you need a service?</p>
     <div>
-    <select>
-    <option value="">  Select your city</option>
+    <select id="select-home-city">
+    <!-- <option value="">  Select your city</option>
     <option value=""><span>
       <img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt="">
       <span>+1</span>
-        </span></option>
+        </span></option> -->
     <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
-    <option value="">  Select your city</option>
+    <option value=""> Austin</option>
+    <option value="">  Dallas</option>
+    <option value="">  India</option>
+    <option value=""> Thrivanthapuram</option>
+    <option value="">  Ahmedabad</option>
+    <option value="">  Madhurai</option>
+    <option value=""> Guntur </option>
+    <option value=""> Mysore </option>
+    <option value=""> Dehradun </option>
+    <option value="">Alwar  </option>
+    <option value=""> Cuttack</option>
+    <option value=""> Gwalior </option>
+    <option value=""> Udaipur </option>
+    <option value="">Mumbai  </option>
+    <option value=""> Nagpur </option>
+     <option value=""> Kota </option> <option value=""> Mumbai </option>
+     <option value=""> Jamsedhpur </option>
+     <option value=""> Mysore </option>
+    <option value=""> Dehradun </option>
+    <option value="">Alwar  </option>
+    <option value=""> Cuttack</option>
+    <option value=""> Gwalior </option>
+    <option value=""> Udaipur </option>
+    <option value="">Mumbai  </option>
     </select>
     </div>
 </div>
@@ -209,12 +240,13 @@
 <span>+1</span>
   </span>
 <span id="icon-div">
-    <span data-icon=""></span>
+  <i onclick="showdropmenu()"    class="fa fa-chevron-circle-down" aria-hidden="true" style="font-size: 25px; align-self: center; padding-top: 5px;" ></i>
 
 </span>
+
 <input id="type-number"type="text">
-<button id="send">Send</button>
-    </div>
+<button id="send-book">Send</button>
+</div>
 </div>
 
 
@@ -248,6 +280,48 @@
 
 
 </div>
+
+
+<!-- Dropdown menu -->
+
+<div id="number-div-drop">
+
+<div>
+
+<ul>
+  <i onclick="hidenumber()" class="fa fa-remove" aria-hidden="true"></i>
+<li><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt=""><span>+1</span><span>  United States</span></li>
+<li><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/supply/partner-app-supply/1661338258375-6c99b1.png" alt=""><span>+91</span><span>  India</span></li>
+<li><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/home-screen/1661338391105-ee4996.png" alt=""><span>+971</span><span>  United Arab Emirates</span></li>
+<li><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/categories/category_v2/category_03847930.png" alt=""><span>+65</span><span>  Singapore</span></li>
+<li><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/home-screen/1612361663672-94027b.png" alt=""><span>+966</span><span>  Suadi Arabia</span></li>
+</ul>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
 
 
 
@@ -334,6 +408,21 @@
       <li><a href="" target="_blank">Patna</a></li>
       <li><a href="" target="_blank">Udaipur</a></li>
       <li><a href="" target="_blank">Madhurai</a></li>
+      <li><a href="">Guntur</a></li>
+      <li><a href="">Gwalior</a></li>
+      <li><a href="">Hyderabad</a></li>
+      <li><a href="">Indore</a></li>
+      <li><a href="">Kanpur</a></li>
+      <li><a href="">Karnal</a></li>
+      <li><a href="">Pune</a></li>
+      <li><a href="">Prayagraj</a></li>
+      <li><a href="" target="_blank">Ranchi</a></li>
+      <li><a href="" target="_blank">Rohtak</a></li>    
+      <li><a href="" target="_blank">Raipur</a></li>
+      <li><a href="" target="_blank">Waranagl</a></li>
+      <li><a href="" target="_blank">Patna</a></li>
+      <li><a href="" target="_blank">Udaipur</a></li>
+      <li><a href="" target="_blank">Madhurai</a></li>
     </ul>
    </li>
    <li><span >UAE</span>
@@ -373,7 +462,7 @@
   <a target="_blank" href="./index.html">
     <div id="urban-logo">
       <div></div>
-      <img src="https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1631097450980-d2de38.png" alt="">
+      <img src=".\images\UL.png" alt="">
     </div>
   </a>
   <span >@ 2014-22 TheUrbanLife Services Pvt. Ltd.</span>
