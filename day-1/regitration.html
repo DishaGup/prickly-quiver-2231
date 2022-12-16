@@ -12,7 +12,7 @@
     
     <section id="header" >
         <nav>
-        <a target="_blank" href=".\day-3\logoattach.html"><img  target="_blank" src=".\images\UL.png" alt=""> </a>
+        <a target="_blank" href="./index.html"><img  target="_blank" src=".\images\UL.png" alt=""> </a>
         <div id="nav-links">
         <ul>
          <li><a href="./day-2/Blog.html">Book A service</a></li>
@@ -60,7 +60,8 @@
 <div id="write">
 
 <div id="namee"><input type="text" placeholder="  Write your name"></div>
-<div id="phone-numb"><div><span><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt=""></span><span>+1</span>
+<div id="phone-numb"><div><span><img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt=""></span>
+  <!-- <span>+1</span> -->
 </div>
   <div id="type-num" ><input type="text" placeholder="  Your phone number" ></div></div>
 <div id="work"><input type="text" placeholder="  What do you do?" ></div>
@@ -70,6 +71,47 @@
 
 
 </div>
+
+
+
+<div id="login-container">
+
+  <div>
+  <div id="click">
+  <span>
+    <!-- <i class='fas fa-window-close' style='font-size:36px'></i> -->
+    <i onclick="hidenumber()" class="fa fa-remove" aria-hidden="true"></i>
+    
+  </span>
+  <p>Please login to Continue</p>
+  </div>
+  
+  <div id="login-number">
+  
+    <div class="number">
+  
+      <span>
+    <img src="https://res.cloudinary.com/urbanclap/image/upload/t_low_res_template/images/growth/luminosity/1641815783491-04970a.png" alt="">
+    <span>+1</span>
+      </span>
+      <span id="icon-div">
+        <!-- <i class="fa" aria-hidden="true"></i> -->
+        <i  class="fa fa-chevron-circle-down"  aria-hidden="true"></i>
+    </span>
+    <input placeholder="Type Your Number" id="type-number"type="text">
+  
+  
+    </div>
+  
+     </div>
+  
+<div id="continue-btn"><button >Continue</button></div>
+
+
+
+  </div>
+  </div>
+
 
 
 
@@ -256,10 +298,139 @@ Footer starts herer -->
     <!-- 3  THE footers ENDSs -->             
 
 
+    <div id="upper-country" >
 
+      <div id="upper-head"><h1>Choose your city</h1> <i class="fa fa-times" aria-hidden="true"></i> </div>
+      
+      
+      
+      <div id="upper-coun-sub" >
+        <div class="upper-country-usa">
+      <h3>Unites States</h3>
+      <ul  >
+      <li><a href="">Austin</a></li>
+          <li><a href="">Dallas</a></li>
+          <li><a href="">New York</a></li>
+      </ul>
+      </div>
+      <div class="upper-country-ind"><h3 >India</h3>
+        <ul >
+          <li><a href="" target="_blank">Agra</a></li>
+          <li><a href="" target="_blank">Ahmedabad</a></li>
+          <li><a href="" target="_blank"> Alwar</a></li>
+          <li><a href="" target="_blank">Amritsar</a></li>
+          <li><a href="" target="_blank">Auranagbad</a></li>
+          <li><a href="" target="_blank">Banagalore</a></li>
+          <li><a href="" target="_blank">Bhopal</a></li>
+          <li><a href="" target="_blank">Karnal</a></li>
+          </ul>
+          <ul>
+            <li><a href="" target="_blank">Cuttack</a></li>
+          <li><a href="" target="_blank">Dehradun</a></li>
+          <li><a href="" target="_blank">Delhi NCR</a></li>
+          <li><a href="">Guntur</a></li>
+          <li><a href="">Gwalior</a></li>
+          <li><a href="">Hyderabad</a></li>
+          <li><a href="">Indore</a></li>
+          <li><a href="">Kanpur</a></li>
+         
+        </ul>
+        <ul>
+          <li><a href="">Prayagraj</a></li>
+          <li><a href="" target="_blank">Ranchi</a></li>
+          <li><a href="" target="_blank">Rohtak</a></li>    
+          <li><a href="" target="_blank">Raipur</a></li>
+          <li><a href="" target="_blank">Waranagl</a></li>
+          <li><a href="" target="_blank">Patna</a></li>
+          <li><a href="" target="_blank">Udaipur</a></li>
+          <li><a href="" target="_blank">Madhurai</a></li>
+      
+      
+        </ul>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="upper-country-uae"> <h3 >UAE</h3>
+        <ul  >
+          <li><a href="">Abu Dhabi</a></li>
+          <li><a href="">Dubai</a></li>
+          <li><a href="">Sharjah</a></li>
+        </ul>
+         
+      </div>
+       
+       
+      
+      <div class="upper-country-sin" ><h3> Singapore</h3>
+        <ul >
+          <li><a href="">Singapore</a></li>
+         
+        </ul></div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="upper-country-ksa" >
+        <h3 >KSA</h3>
+        <ul >
+          <li><a href="">Jeddah</a></li>
+          <li><a href="">Riyadh</a></li>
+          
+        </ul>
+      
+      
+      </div>
+      
+      
+      
+      
+      </div>
+      
+      </div>
+      
 
 
 
 
 </body>
+
+<script>
+let login=document.getElementById("login")
+let container=document.getElementById("login-container")
+//login.addEventListener("click",shownumber)
+let dropmenu=document.getElementById("number-div-drop")
+let showdrop=document.getElementById("upper-country")
+
+function shownumber(){
+
+container.style.right="0";
+container.style.opacity="5";
+container.style.display="block"
+}
+function hidenumber() {
+    container.style.right="-300px";
+container.style.opacity="0";
+container.style.display="block"
+dropmenu.style.opacity="0"
+}
+function showdropmenu() {
+    dropmenu.style.opacity="100%"
+}
+function showcountrydrop() {
+    // showdrop.style.transform="translateY(0%)"
+    showdrop.style.opacity="10"
+}
+
+
+</script>
+
 </html>
