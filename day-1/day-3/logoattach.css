@@ -859,13 +859,16 @@ width: 55%;
 }
 #number-div-drop{
     padding: 24px;
-    left: 50%;
-    top: 50%;
-    opacity: 0;
+    left: 450px;
+    top: -400px;
+    opacity: 10;
     width: 300px;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transform: translate(-50%,-50%) scale(1.05); 
+    /* transform: translate(-50%,-50%) scale(1.05);   */
+    display: block;
+    background-color: #eee;
+    z-index: 6;
 }
 #number-div-drop>div{
     position: relative;
@@ -927,7 +930,7 @@ box-sizing: border-box;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     /* transform: translate(0%,0%) scale(1.05);  */
-    transform: translateY(0%); 
+    transform: translateY(-100%); 
     transition : 0.3s ;
 }
 #upper-head{
@@ -1001,3 +1004,62 @@ box-sizing: border-box;
     background-color: #bdbdbd;
     transform: scale(1.02);
 }
+
+
+/* Side div drop */
+
+
+
+#side-div-drop{
+    padding: 24px;
+    right: -400px;
+    top: 0;
+    opacity: 10;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* transform: translate(-50%,-50%) scale(1.05);   */
+    display: block;
+    background-color: #F9FBE7;
+ padding-top: 20px;
+ z-index: 6;
+}
+#side-div-drop>div{
+    position: relative;
+    width: 100%;
+    height: 130%;
+    box-sizing: border-box;
+   
+}
+#side-div-drop ul{
+    list-style-type: none;
+  
+    
+}
+#side-div-drop li{
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+    background-position: 50%;
+    transition: all .3s;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+#side-div-drop li:hover{
+    background-color: #bdbdbd;
+}
+
+#side-div-drop li img{
+margin-right: 12px;
+    width: 40px;
+  box-sizing: border-box;
+}
+
+#side-div-drop li span:nth-child(1){
+box-sizing: border-box;
+}
+

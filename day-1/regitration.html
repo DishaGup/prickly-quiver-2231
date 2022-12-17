@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="regitration.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <a target="_blank" href="./index.html"><img  target="_blank" src=".\images\UL.png" alt=""> </a>
         <div id="nav-links">
         <ul>
-         <li><a href="./day-2/Blog.html">Book A service</a></li>
+         <li onclick="showcountrydrop()" ><a href="#">Book A service</a></li>
          <li><a href="./regitration.html">About Us</a></li>
          <li><a href="">Help Center </a></li>
          <li onclick="shownumber()" ><a  id="login" href="">Login/Sign Up</a></li>
@@ -55,7 +56,7 @@
 
 
 <div id="home-div-down" >
-    <h2>Start earning straight away. Share your details and we’ll reach out with next steps.</h2>
+    <h2 id="touch-head">Start earning straight away. Share your details and we’ll reach out with next steps.</h2>
 
 <div id="write">
 
@@ -65,7 +66,7 @@
 </div>
   <div id="type-num" ><input type="text" placeholder="  Your phone number" ></div></div>
 <div id="work"><input type="text" placeholder="  What do you do?" ></div>
-<button>Get in touch</button> 
+<button id="touch" >Get in touch</button> 
 
 </div>
 
@@ -194,9 +195,9 @@ Footer starts herer -->
      </li>
      <li><span >IND</span>
         <ul class="country-ind">
-          <li><a href="" target="_blank">Agra</a></li>
-          <li><a href="">Ahmedabad</a></li>
-          <li><a href="">Alwar</a></li>
+          <li><a href="#" onclick="showcountrydrop()">Agra</a></li>
+          <li><a href="" onclick="showcountrydrop()">Ahmedabad</a></li>
+          <li><a href="" onclick="showcountrydrop()">Alwar</a></li>
           <li><a href="">Amritsar</a></li>
           <li><a href="">Auranagbad</a></li>
           <li><a href="">Banagalore</a></li>
@@ -300,7 +301,7 @@ Footer starts herer -->
 
     <div id="upper-country" >
 
-      <div id="upper-head"><h1>Choose your city</h1> <i class="fa fa-times" aria-hidden="true"></i> </div>
+      <div id="upper-head"><h1>Choose your city</h1> <i onclick="hidecountrydrop()" class="fa fa-times" aria-hidden="true"></i> </div>
       
       
       
@@ -315,8 +316,8 @@ Footer starts herer -->
       </div>
       <div class="upper-country-ind"><h3 >India</h3>
         <ul >
-          <li><a href="" target="_blank">Agra</a></li>
-          <li><a href="" target="_blank">Ahmedabad</a></li>
+          <li><a  href="./day-3/logoattach.html" target="_blank">Agra</a></li>
+          <li><a href="./index.html" target="_blank">Ahmedabad</a></li>
           <li><a href="" target="_blank"> Alwar</a></li>
           <li><a href="" target="_blank">Amritsar</a></li>
           <li><a href="" target="_blank">Auranagbad</a></li>
@@ -402,35 +403,7 @@ Footer starts herer -->
 
 
 </body>
+<script src="./scripts/registration.js"></script>
 
-<script>
-let login=document.getElementById("login")
-let container=document.getElementById("login-container")
-//login.addEventListener("click",shownumber)
-let dropmenu=document.getElementById("number-div-drop")
-let showdrop=document.getElementById("upper-country")
-
-function shownumber(){
-
-container.style.right="0";
-container.style.opacity="5";
-container.style.display="block"
-}
-function hidenumber() {
-    container.style.right="-300px";
-container.style.opacity="0";
-container.style.display="block"
-dropmenu.style.opacity="0"
-}
-function showdropmenu() {
-    dropmenu.style.opacity="100%"
-}
-function showcountrydrop() {
-    // showdrop.style.transform="translateY(0%)"
-    showdrop.style.opacity="10"
-}
-
-
-</script>
 
 </html>

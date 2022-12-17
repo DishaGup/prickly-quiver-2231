@@ -10,7 +10,10 @@
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-</head> -->
+--->
+
+</head> 
+
 <body>
     
 <!-- ---navbar starts---- -->
@@ -227,6 +230,7 @@
 <div id="book">
 
 
+
 <section id="left">
 <h2>Book Professionals from your phone</h2>
 <p>Enter your mobile number to get the App download link.</p>
@@ -245,7 +249,7 @@
 </span>
 
 <input id="type-number"type="text">
-<button id="send-book">Send</button>
+<button onclick="sendAlert()" id="send-book">Send</button>
 </div>
 </div>
 
@@ -381,11 +385,11 @@
     <li><a href="">New York</a></li>
   </ul>
  </li>
- <li><span >IND</span>
+ <li><span >IND</span>   
     <ul class="country-ind">
-      <li onclick="showcountrydrop"><a href=""  >Agra</a></li>
-      <li onclick="showcountrydrop"><a href="">Ahmedabad</a></li>
-      <li onclick="showcountrydrop"><a href="">Alwar</a></li>
+      <li onclick="showcountrydrop()"><a onclick="showcountrydrop()" href="#"  >Agra</a></li>
+      <li onclick="showcountrydrop()"><a href="">Ahmedabad</a></li>
+      <li onclick="showcountrydrop()"><a href="">Alwar</a></li>
       <li><a href="">Amritsar</a></li>
       <li><a href="">Auranagbad</a></li>
       <li><a href="">Banagalore</a></li>
@@ -491,7 +495,7 @@ Upper Sliding Country Part -->
 
 <div id="upper-country" >
 
-<div id="upper-head"><h1>Choose your city</h1> <i class="fa fa-times" aria-hidden="true"></i> </div>
+<div id="upper-head"><h1>Choose your city</h1> <i  onclick="hidecountrydrop()"   class="fa fa-times" aria-hidden="true"></i> </div>
 
 
 
@@ -506,7 +510,7 @@ Upper Sliding Country Part -->
 </div>
 <div class="upper-country-ind"><h3 >India</h3>
   <ul >
-    <li><a href="" target="_blank">Agra</a></li>
+    <li><a href="./day-3/logoattach.html" target="_blank">Agra</a></li>
     <li><a href="" target="_blank">Ahmedabad</a></li>
     <li><a href="" target="_blank"> Alwar</a></li>
     <li><a href="" target="_blank">Amritsar</a></li>
@@ -593,71 +597,6 @@ Upper Sliding Country Part -->
 
 </body>
 
-<!-- <script src="./scripts/index.js"></script> -->
-<!-- <script src="./scripts/indexmain.js"></script> -->
+<script src="./scripts/index.js"></script>
 
-
- <script>
-let login=document.getElementById("login")
-let container=document.getElementById("login-container")
-login.addEventListener("click",shownumber)
-let dropmenu=document.getElementById("number-div-drop")
-let showdrop=document.getElementById("upper-country")
-
-function shownumber(){
-
-container.style.right="0";
-container.style.opacity="5";
-container.style.display="block"
-}
-function hidenumber() {
-    container.style.right="-300px";
-container.style.opacity="0";
-container.style.display="block"
-dropmenu.style.opacity="0"
-}
-
-
-function showdropmenu() {
-    dropmenu.style.opacity="100"
-}
-
-function showcountrydrop() {
-    // showdrop.style.transform="translateY(0%)"
-    showdrop.style.opacity="10"
-}
-</script> 
-
-<!-- <script src="./scripts/indexmain.js"></script> -->
 </html>
-
-<!-- <script>
-  let login=document.getElementById("login")
-  let container=document.getElementById("login-container")
-  //login.addEventListener("click",shownumber)
-  let dropmenu=document.getElementById("number-div-drop")
-  let showdrop=document.getElementById("upper-country")
-  
-  function shownumber(){
-  
-  container.style.right="0";
-  container.style.opacity="5";
-  container.style.display="block"
-  }
-  function hidenumber() {
-      container.style.right="-300px";
-  container.style.opacity="0";
-  container.style.display="block"
-  dropmenu.style.opacity="0"
-  }
-  
-  
-  function showdropmenu() {
-      dropmenu.style.opacity="100"
-  }
-  
-  function showcountrydrop() {
-      // showdrop.style.transform="translateY(0%)"
-      showdrop.style.opacity="10"
-  }
-  </script> -->

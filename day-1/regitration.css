@@ -983,13 +983,13 @@ width: 55%;
     
    display: block;
     position:relative;
-    opacity: 0;
+    opacity: 10;
     z-index: 5;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    /* transform: translate(0%,0%) scale(1.05);  */
-    transform: translateY(0%); 
-    transition : 0.3s ;
+     /* transform: translate(0%,-120%) scale(1.05);   */
+    transform: translateY(-100%);  
+     transition : 0.3s ; 
 }
 #upper-head{
     display: flex;
@@ -1060,5 +1060,5 @@ width: 55%;
 
 #upper-coun-sub li:hover{
     background-color: #bdbdbd;
-    transform: scale(1.02);
+    transform: scale(1.2);
 }
